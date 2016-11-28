@@ -102,7 +102,8 @@ and T5(latchRx8,in1,~in2,~in3,~in4,in5);
 or nine(latchRx9, latchRx2, latchRx3, latchRx4, latchRx5, latchRx6, latchRx7, latchRx8,latchRx1 );//9
 and latchRxCheck(latchRx,latchRx9, cout );
 
-and validRx1(validRx, in1,~in2,~in3,in4,~in5);
+and validRx1(validRxTemp, in1,~in2,~in3,in4,~in5);
+and validRx2(validRx, validRxTemp, cout );
 
 and ten(rstRx1,in1,~in2,~in3,in4,~in5);
 or ten1(rstRx, rstRx1, rst);//10

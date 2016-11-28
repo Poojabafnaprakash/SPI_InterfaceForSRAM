@@ -18,6 +18,6 @@ begin
 	end	
 end
 
-assign  rxout = (validRx) ? finalRotateRxData : rxout;
+assign  rxout = (validRx) ? finalRotateRxData : 8'bz;
 
 endmodule

@@ -35,7 +35,6 @@ begin
 		5'b10001 : begin in1=1;in2=0;in3=0;in4=0;in5=1; end
 		5'b10010 : begin in1=1;in2=0;in3=0;in4=1;in5=0; end
 		5'b10011 : begin in1=1;in2=0;in3=0;in4=1;in5=1; end
-
 		5'b10100 : begin in1=1;in2=0;in3=1;in4=0;in5=0; end	//20
 		5'b10101 : begin in1=1;in2=0;in3=1;in4=0;in5=1; end
 		5'b10110 : begin in1=1;in2=0;in3=1;in4=1;in5=0; end	
