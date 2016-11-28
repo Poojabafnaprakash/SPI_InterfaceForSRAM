@@ -15,7 +15,8 @@ counter_5bit counter_5bit_Inst( .in1(in1),
 								.in3(in3),
 								.in4(in4),
 								.in5(in5),
-								.sck(sck));
+								.sck(sck),
+								.rst(rst));
 
 controller controller_Inst( .decA(decA), 
 							.rstA(rstA), 

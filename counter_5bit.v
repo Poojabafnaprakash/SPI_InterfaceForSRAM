@@ -1,11 +1,20 @@
-module counter_5bit(in1,in2,in3,in4,in5,sck);
+module counter_5bit(in1,in2,in3,in4,in5,sck, rst);
 
 reg [4:0] out;
 output reg in1,in2,in3,in4,in5;
-input sck;
+input sck, rst;
 
 always @(posedge sck)
 begin
+	if(rst)
+		begin
+		out <= 5'b00000;
+		in1=0;in2=0;in3=0;in4=0;in5=0;
+
+		end
+
+	else
+	begin
 	case(out)
 		5'b00001 : begin in1=0;in2=0;in3=0;in4=0;in5=1; end
 		5'b00010 : begin in1=0;in2=0;in3=0;in4=1;in5=0; end
@@ -42,7 +51,7 @@ begin
 		default: begin in1=0;in2=0;in3=0;in4=0;in5=1; out = 5'b00001; end
 	endcase
 	out = out + 1;
+	end
 end
-
 
 endmodule

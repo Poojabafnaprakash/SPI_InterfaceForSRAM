@@ -12,7 +12,7 @@ always @(posedge sck)
 begin
 	if(latchA)
 	begin  
-		finalRotateAddr[Acount] = sdi;
+		finalRotateAddr[Acount] <= sdi;
 	end
 end
 

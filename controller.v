@@ -53,8 +53,9 @@ and D1(latchA4,~in1,~in2,in3,~in4,~in5);
 and E1(latchA5,~in1,~in2,in3,~in4,in5);
 and F1(latchA6,~in1,~in2,in3,in4,~in5);
 and G1(latchA7,~in1,~in2,in3,in4,in5);
+and H1(latchA8,~in1,in2,~in3,~in4,~in5);
 
-or three(latchA,latchA1,latchA2,latchA3,latchA4,latchA5,latchA6,latchA7, lA);//3
+or three(latchA,latchA1,latchA2,latchA3,latchA4,latchA5,latchA6,latchA7, latchA8, lA);//3
 
 and four(validA,~in1,in2,~in3,~in4,in5);//4
 
