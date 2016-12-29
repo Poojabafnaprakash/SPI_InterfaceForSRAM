@@ -1,10 +1,8 @@
+
 module controller(decA, rstA, latchA, validA, loadCbuf, command, latchRx, validRx , decRx, rstRx, loadTx, decTx, shiftTx, rstTx, ss, in1,in2,in3,in4,in5, rst, lA, dA, cout);
 
 output wire decA, rstA, latchA, validA, loadCbuf, command, latchRx, decRx, rstRx, ss, validRx, loadTx, decTx, shiftTx, rstTx;
 input in1,in2,in3,in4,in5, rst, lA, dA, cout;
-
-//output wire loadTx, decTx, rstTx, shiftTx;
-//loadTx, decTx, rstTx, shiftTx,
 
 and A2(ss1,~in1,~in2,~in3,~in4,in5);
 and B2(ss2,~in1,~in2,~in3,in4,~in5);
